@@ -4,7 +4,7 @@
  * Author: 3rd Wave Media
  * Twitter: @3rdwave_themes
  * License: Creative Commons Attribution 3.0 License
- * Website: http://themes.3rdwavemedia.com/
+ * Website: http://themes.3rdwavemedicom/
 */
 /* ======= Base ======= */
 body {
@@ -27,10 +27,10 @@ h6 {
 }
 a {
   color: #479fc8;
-  -webkit-transition: all 0.4s ease-in-out;
-  -moz-transition: all 0.4s ease-in-out;
-  -ms-transition: all 0.4s ease-in-out;
-  -o-transition: all 0.4s ease-in-out;
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -ms-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
 }
 a:hover {
   text-decoration: underline;
@@ -39,16 +39,16 @@ a:hover {
 }
 .btn,
 a.btn {
-  -webkit-transition: all 0.4s ease-in-out;
-  -moz-transition: all 0.4s ease-in-out;
-  -ms-transition: all 0.4s ease-in-out;
-  -o-transition: all 0.4s ease-in-out;
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -ms-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
   font-family: 'Montserrat', arial, sans-serif;
   padding: 8px 16px;
   font-weight: bold;
 }
-.btn .fa,
-a.btn .fa {
+.btn .fa .fab .fas,
+a.btn .fa .fab .fas{
   margin-right: 5px;
 }
 .btn:focus,
@@ -157,7 +157,17 @@ iframe {
 .header .profile-content .social a:hover {
   background: #778492;
 }
-.header .profile-content .social a .fa {
+.header .profile-content .social a .fa{
+  font-size: 20px;
+  padding-top: 8px;
+}
+
+.header .profile-content .social a .fab{
+  font-size: 20px;
+  padding-top: 8px;
+}
+
+.header .profile-content .social a .fas{
   font-size: 20px;
   padding-top: 8px;
 }
@@ -173,6 +183,8 @@ iframe {
   background: #fff;
   padding: 30px;
   box-shadow: 4px 5px #a1a1a1;
+  overflow: auto;
+  width:100%;
 }
 .section .heading {
   margin-top: 0;
@@ -180,7 +192,7 @@ iframe {
   color: #545e69;
   font-size: 24px;
 }
-.section .content .more-link .fa {
+.section .content .more-link .fa .fab .fas{
   margin-right: 5px;
   font-size: 14px;
 }
@@ -329,7 +341,7 @@ iframe {
   box-sizing: content-box;
 }
 /* Info Section */
-.info .fa {
+.info .fa .fab .fas{
   margin-right: 15px;
   color: #ccd1d6;
 }
@@ -388,7 +400,7 @@ iframe {
   border-left-color: #9fdeb7;
   margin-bottom: 15px;
 }
-.testimonials .item .quote .fa {
+.testimonials .item .quote .fa .fab .fas{
   color: #191919;
   margin-right: 15px;
 }
@@ -439,7 +451,7 @@ iframe {
 .languages .item:last-child {
   margin-bottom: 0;
 }
-.languages .item .fa {
+.languages .item .fa .fab .fas{
   color: #191919;
 }
 /* Blog Section */
@@ -463,7 +475,7 @@ iframe {
 .list ul li {
   margin-bottom: 10px;
 }
-.list ul li .fa {
+.list ul li .fa .fab .fas{
   margin-right: 5px;
 }
 .list ul li a {
@@ -476,7 +488,7 @@ iframe {
 .credits ul li {
   margin-bottom: 10px;
 }
-.credits ul li .fa {
+.credits ul li .fa .fab .fas{
   margin-right: 5px;
 }
 .credits ul li a {
@@ -534,4 +546,64 @@ iframe {
   .container {
     width: 1360px;
   }
+}
+
+a.button {
+  background-color: #479fc8;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  width: 100%;
+}
+
+.button {
+  transition-duration: 0.2s;
+}
+
+.button:hover {
+  background-color: #49515a;
+  color: #d8d8d8;
+}
+
+.students {
+  display: inline-block;
+  margin: 0 auto;
+  width: 100%;
+  text-align: center;
+}
+
+.advisors{
+  display: inline-block;
+  margin: 0 auto;
+  width: 100%;
+  text-align: center;
+}
+
+#circle{
+  width:125px;
+  height:125px;
+  border-radius:50%;
+  position:relative;
+  overflow:hidden;
+  display: inline-block;
+  margin: 15px
+
+}
+
+#overlay{
+  display:none;
+  position:absolute;
+  bottom:0;
+  text-align:center;
+  width:125px;
+  height:125px; /* Half of the container */
+  background-color: rgba(71, 159, 200,0.75);
+  font-size: 20px;
+}
+#circle:hover #overlay{
+  display:block;
 }
